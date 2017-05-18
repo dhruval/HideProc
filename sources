@@ -1,0 +1,6 @@
+TARGETNAME = PROC
+TARGETTYPE = DRIVER
+
+
+TARGETPATH = ..\compile
+SOURCES = main.c
