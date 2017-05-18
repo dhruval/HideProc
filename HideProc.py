@@ -41,7 +41,6 @@ def close_handle(handle):
 
 if __name__ == "__main__":
     # constant declaration
-    buffer_size = 0x8
     bytes_returned = c_ulong()
     IOCTL = 0x0022200B
     device_name = "\\\\.\\HideProc"
@@ -52,7 +51,7 @@ if __name__ == "__main__":
     success = kernel32.DeviceIoControl(device_handle,
                                        IOCTL,
                                        0,
-                                       buffer_size,
+                                       0,
                                        None,
                                        0,
                                        byref(bytes_returned),
