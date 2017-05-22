@@ -8,3 +8,5 @@ Here, malicious driver manipulate the EPROCESS structure's Flink and Blink point
 To test this driver, load it with the help of OSR loader and call its IOCTL 0x0022200B.
 
 Python file HideProc.py will help you test this feature very fast.
+
+Tested on XP only.
