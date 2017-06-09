@@ -65,8 +65,7 @@ NTSTATUS ManipulateEprocess(IN PIRP Irp, IN PIO_STACK_LOCATION IrpSp) {
 		if(ptr[i]==(ULONG)PID)
         {
 			offset=(ULONG)&ptr[i+1]-(ULONG)Process; // ActiveProcessLinks is located next to the PID
-			DbgPrint("ActiveProcessLinks offset: %#x",offset);
-            break;
+	            break;
         }
     }
 	
