@@ -1,5 +1,5 @@
 # HideProc
-This code is part of "Absoute Essence of Malcode" series @https://epicshellcode.blogspot.com
+This code is part of "Absoute Essence of Malcode" series @https://reversingcore.blogspot.com
 
 Brief : 
 This is a  driver which hides a calling userland process (DKOM).This is very interesting feature most malware/rootkit uses for hiding itself to evade and confuse the malware researchers. Here, malicious driver manipulate the EPROCESS structure's Flink and Blink pointers.
